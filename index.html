@@ -1,0 +1,42 @@
+<style>
+
+
+  #box {
+    width: 300px;
+    background-color: rgb(255,0,0);
+    padding: 30px;
+  }
+
+</style>
+
+<div id="box">
+  hi
+</div>
+
+
+<script>
+  
+  function randomColor () {
+  const r = Math.random() * 255
+  const g = Math.random() * 255
+  const b = Math.random() * 255
+  return `rgb(${r}, ${g}, ${b})` 
+  
+}
+
+const box = document.querySelector('#box')
+box.innerText = 'bye'
+box.style.color = 'white'
+
+
+const color = randomColor()
+
+console.log(color)
+
+box.style.backgroundColor = color
+
+
+  box.addEventListener()
+
+
+</script>
