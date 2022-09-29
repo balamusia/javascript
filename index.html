@@ -1,12 +1,9 @@
 <style>
-
-
   #box {
     width: 300px;
-    background-color: rgb(255,0,0);
+    background-color: rgb(255, 0, 0);
     padding: 30px;
   }
-
 </style>
 
 <div id="box">
@@ -15,29 +12,24 @@
 
 
 <script>
-  
-  function randomColor () {
-  const r = Math.random() * 255
-  const g = Math.random() * 255
-  const b = Math.random() * 255
-  return `rgb(${r}, ${g}, ${b})` 
-  
-}
-  
-  function updateBox(){
+  function randomColor() {
+    const r = Math.random() * 255
+    const g = Math.random() * 255
+    const b = Math.random() * 255
+    return `rgb(${r}, ${g}, ${b})`
+
+  }
+
+  function updateBox() {
     box.style.backgroundColor = randomColor()
     box.style.color = randomColor()
     document.body.style.backgroundColor = randomColor()
-  }  
+  }
 
-const box = document.querySelector('#box')
-box.innerText = 'bye'
-box.style.color = 'white'
+  const box = document.querySelector('#box')
+  box.innerText = 'bye'
+  box.style.color = 'white'
 
 
   box.addEventListener('click', updateBox)
-  
-  
-
-
 </script>
