@@ -23,20 +23,19 @@
   return `rgb(${r}, ${g}, ${b})` 
   
 }
+  
+  function updateBox(){
+    box.style.backgroundColor = randomColor()
+  }  
 
 const box = document.querySelector('#box')
 box.innerText = 'bye'
 box.style.color = 'white'
 
 
-const color = randomColor()
-
-console.log(color)
-
-box.style.backgroundColor = color
-
-
-  box.addEventListener()
+  box.addEventListener('click', updateBox)
+  
+  
 
 
 </script>
